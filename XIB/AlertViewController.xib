@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AlertViewController" rowHeight="101" id="KGk-i7-Jjw" customClass="AlertViewController" customModule="XIB" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="391" height="101"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="391" height="101"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sDr-7g-fVv">
+                        <rect key="frame" x="30.000000000000004" y="21" width="60.333333333333343" height="51"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" title="Alert"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1XZ-bF-jNh">
+                        <rect key="frame" x="136.33333333333334" y="21" width="116.66666666666666" height="51"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" title="ActionSheet"/>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" systemColor="systemTealColor"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="sDr-7g-fVv" secondAttribute="bottom" constant="29" id="2w8-ZX-2QY"/>
+                    <constraint firstItem="1XZ-bF-jNh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="21" id="4yA-7l-SoU"/>
+                    <constraint firstItem="sDr-7g-fVv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="G9f-WC-UvV"/>
+                    <constraint firstAttribute="trailing" secondItem="1XZ-bF-jNh" secondAttribute="trailing" constant="138" id="PNa-oK-1m6"/>
+                    <constraint firstItem="sDr-7g-fVv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="21" id="a4i-hq-ZqP"/>
+                    <constraint firstAttribute="bottom" secondItem="1XZ-bF-jNh" secondAttribute="bottom" constant="29" id="gai-Ir-OTC"/>
+                    <constraint firstItem="1XZ-bF-jNh" firstAttribute="leading" secondItem="sDr-7g-fVv" secondAttribute="trailing" constant="46" id="sDG-bb-WvF"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="actionButton" destination="sDr-7g-fVv" id="4fC-nM-FRS"/>
+                <outlet property="sheetButton" destination="1XZ-bF-jNh" id="bGp-Hw-PsB"/>
+            </connections>
+            <point key="canvasLocation" x="110.68702290076335" y="41.197183098591552"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529410000001" green="0.69019607839999997" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
